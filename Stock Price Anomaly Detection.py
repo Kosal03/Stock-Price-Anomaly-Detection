@@ -108,5 +108,3 @@ anomalies = anomaly_df.loc[anomaly_df['anomaly'] == True]
 #Plot anomaly
 sns.lineplot(x=anomaly_df['Date'], y=scaler.inverse_transform(anomaly_df['Close']))
 sns.scatterplot(x=anomalies['Date'], y=scaler.inverse_transform(anomalies['Close']), color='r')
-
-#sjdfb 
